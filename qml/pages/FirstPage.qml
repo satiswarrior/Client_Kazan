@@ -26,8 +26,9 @@ Page {
         // PullDownMenu and PushUpMenu must be declared in SilicaFlickable, SilicaListView or SilicaGridView
         PullDownMenu {
             MenuItem {
-                text: qsTr("Show Page 2")
-                onClicked: pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
+                text: qsTr("Call the Operator")
+//                onClicked: pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
+                onClicked: Qt.openUrlExternally("tel:+79991234567")
             }
         }
 
@@ -98,7 +99,7 @@ Page {
 
                 Label {
                     id: deadline2
-                    text: "14:30"
+                    text: "15:35"
                 }
             }
 

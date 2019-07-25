@@ -11,11 +11,11 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <source>Show Page 2</source>
+        <source>Page UI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Page UI</source>
+        <source>Call the Operator</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
