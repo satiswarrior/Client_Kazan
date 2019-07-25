@@ -11,22 +11,22 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <source>Page UI</source>
+        <source>Call the Operator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Call the Operator</source>
+        <source>Task list</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SecondPage</name>
     <message>
-        <source>Nested Page</source>
+        <source>Call the Operator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Item</source>
+        <source>Task no. 1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

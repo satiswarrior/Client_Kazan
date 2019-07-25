@@ -5,7 +5,7 @@ Page {
     id: page
 
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
-    allowedOrientations: Orientation.All
+    allowedOrientations: Orientation.Portrait
 
     Timer {
            id: clock
@@ -42,7 +42,7 @@ Page {
             width: parent.width
             spacing: Theme.paddingLarge
 
-            PageHeader { title: qsTr("Page UI") }
+            PageHeader { title: qsTr("Task list") }
 
 //            Text {
 //             width: parent.width
@@ -54,12 +54,11 @@ Page {
 
 
             Label {
-//                text: (new Date()).toLocaleTimeString()
                 text: clock.time
                 font.pixelSize: Theme.fontSizeSmall
                 width: parent.width
+                color: Theme.highlightColor
                 horizontalAlignment: Label.AlignHCenter
-//                anchors.centerIn: parent
             }
 
             Row {
@@ -69,16 +68,18 @@ Page {
                 TextSwitch {
                     id: activationSwitch
                     width: 600
-                    text: "Active"
+                    text: "Activity 1"
                     description: "Zone: Lenina st. 35"
                     onCheckedChanged: {
-                        device.setStatus(checked ? DeviceState.Armed : DeviceState.Disarmed)
+//                        device.setStatus(checked ? DeviceState.Armed : DeviceState.Disarmed) & pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
+                    pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
                     }
                 }
 
                 Label {
                     id: deadline
                     text: "14:30"
+                    color: Theme.highlightColor
                 }
             }
 
@@ -90,7 +91,7 @@ Page {
                 TextSwitch {
                     id: activationSwitch2
                     width: 600
-                    text: "Active"
+                    text: "Activity 2"
                     description: "Zone: Lenina st. 35"
                     onCheckedChanged: {
                         device.setStatus(checked ? DeviceState.Armed : DeviceState.Disarmed)
@@ -100,6 +101,7 @@ Page {
                 Label {
                     id: deadline2
                     text: "15:35"
+                    color: Theme.highlightColor
                 }
             }
 
